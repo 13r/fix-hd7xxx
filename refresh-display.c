@@ -12,6 +12,7 @@ int main() {
 	io_service_t service = CGDisplayIOServicePort(mainDisplay);
 	
 	IOServiceRequestProbe(service, (kIOFBSetTransform | (kIOScaleRotate90 << 16)));
+	sleep(1);
 	IOServiceRequestProbe(service, (kIOFBSetTransform | (kIOScaleRotate0 << 16)));
 	
 	return 0;
