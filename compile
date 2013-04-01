@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc refresh-display.c -framework ApplicationServices -framework IOKit -o refresh-display -m32
